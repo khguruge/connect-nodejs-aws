@@ -38,7 +38,6 @@ const download = (fileKey) => {
 
 exports.uploadAWS = async (req, res, next) => {
     try {
-        console.log(req.files.file.name)
         upload = await uploadFile(req.files.file);
         return res.json({
             "success": true,
