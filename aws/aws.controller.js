@@ -33,7 +33,8 @@ const download = (fileKey) => {
     return url;
 };
 
-
+// API Upload
+// http://localhost:8080/api/aws/file/upload
 
 exports.uploadAWS = async (req, res, next) => {
     try {
@@ -53,7 +54,6 @@ exports.uploadAWS = async (req, res, next) => {
         });
     }
 };
-
 
 // API Download
 // http://localhost:8080/api/aws/file/download/:filename
