@@ -1,0 +1,25 @@
+{
+  "name": "connect-nodejs-aws",
+  "version": "1.0.0",
+  "description": "Connect AWS and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khguruge/connect-nodejs-aws.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khguruge/connect-nodejs-aws/issues"
+  },
+  "homepage": "https://github.com/khguruge/connect-nodejs-aws#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1157.0"
+  }
+}
