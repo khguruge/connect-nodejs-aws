@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
-const ACCESS_KEY_ID = 'AKIA2EV77YWUPVWCBIMS';
-const SECRET_ACCESS_KEY = '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';
-const BUCKET_NAME = 'cms-files-bucket';
+const ACCESS_KEY_ID = '*******************';
+const SECRET_ACCESS_KEY = '***************';
+const BUCKET_NAME = 'medium-bucket';
 
 const s3 = new AWS.S3({
     accessKeyId: ACCESS_KEY_ID,
@@ -24,10 +24,10 @@ const uploadFile = (file) => {
     });
 };
 
-const download = (fileKey) => {
+const download = (filename) => {
     const url = s3.getSignedUrl('getObject', {
         Bucket: BUCKET_NAME,
-        Key: fileKey,
+        Key: filename,
         Expires: 10 * 60
     });
     return url;
